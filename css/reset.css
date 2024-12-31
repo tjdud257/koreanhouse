@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+html,head,body,ul,ol,li,h1,h2,h3,h4,h5,h6,div,dl,dt,dd,table,td,tr,thead,tbody,tfoot,address,p,caption,figure,figcaption,form,legend,fieldset,head,nav,main,section {margin: 0; padding: 0;}
+
+ul, ol {list-style-type: none;}
+a {text-decoration: none; color: inherit;}
+
+em, i, address, cite {font-style: normal;}
+
+h1, h2, h3, h4, h5, h6, strong, b {font-weight: 500;}
+
+input, button {border: none;}
+button {cursor: pointer;}
+
+/* float해제를 위한 가상 선택자 */
+:clear::before,
+:clear::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* 텍스트 브라인드 */
+.blind {
+    font-size: 0;
+    line-height: 0;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
